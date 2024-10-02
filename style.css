@@ -1,0 +1,73 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: left;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.card {
+    background-color: blueviolet;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color:  black;
+}
+
+.card-visite { /*cachée par défaut*/
+    display: none; 
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 95%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .cv-card {
+        display: none; 
+    }
+
+    .card-visite {
+        display: block; 
+    }
+
+    .card-visite h1 {
+        font-size: 1.5rem; 
+    }
+
+    .card-visite ul li {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-visite {
+        width: 95%; 
+        padding: 10px; 
+    }
+
+    .card-visite h1 {
+        font-size: 1.25rem; 
+    }
+
+    .card-visite ul li {
+        font-size: 0.9rem;
+    }
+}
