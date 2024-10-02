@@ -11,13 +11,21 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+h1{
+    color:rgb(8, 8, 110)
+}
+
+h3{
+    color:goldenrod
+}
+
 ul, ol {
     padding-left: 20px;
 }
 
 .card {
-    background-color: blueviolet;
-    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(217, 213, 222);
+    border: 6px solid rgb(87, 9, 135);
     border-radius: 10px;
     padding: 20px;
     width: 80%;
@@ -28,14 +36,14 @@ ul, ol {
 
 .card-visite { /*cachée par défaut*/
     display: none; 
-    background-color: blueviolet;
+    background-color: rgb(217, 213, 222);
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
     width: 95%;
     margin: 20px auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: darkblue;
 }
 
 
@@ -70,4 +78,15 @@ ul, ol {
     .card-visite ul li {
         font-size: 0.9rem;
     }
+}
+
+
+a {
+    color: rgb(78, 46, 132); 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: rgb(78, 46, 132); 
 }
